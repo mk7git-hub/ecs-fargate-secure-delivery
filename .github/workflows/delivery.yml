@@ -37,7 +37,7 @@ jobs:
       - name: build image
         run: docker build -t app:${{ github.sha }} .
       - name: scan image (fail on fixable HIGH or CRITICAL)
-        uses: aquasecurity/trivy-action@0.28.0
+        uses: aquasecurity/trivy-action@v0.36.0
         with:
           image-ref: app:${{ github.sha }}
           severity: HIGH,CRITICAL
@@ -46,7 +46,7 @@ jobs:
           format: table
       - name: scan image (SARIF for the Security tab)
         if: always()
-        uses: aquasecurity/trivy-action@0.28.0
+        uses: aquasecurity/trivy-action@v0.36.0
         with:
           image-ref: app:${{ github.sha }}
           format: sarif
