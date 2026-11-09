@@ -30,7 +30,7 @@ jobs:
       - name: unit tests
         run: pip install pytest && pytest -q
       - name: lint Dockerfile
-        uses: hadolint/hadolint-action@v3.1.0
+        uses: hadolint/hadolint-action@v3.5.0
         with:
           dockerfile: Dockerfile
           failure-threshold: error
