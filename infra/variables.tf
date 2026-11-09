@@ -21,3 +21,13 @@ variable "allowed_cidr" {
   default     = "0.0.0.0/0"
   description = "Who can reach the ALB. Set to your IP/32 to keep the demo private."
 }
+
+variable "github_owner_id" {
+  type        = number
+  description = "Numeric GitHub owner ID (OIDC subjects include it for repos created after July 2026)"
+}
+
+variable "github_repo_id" {
+  type        = number
+  description = "Numeric GitHub repository ID"
+}
