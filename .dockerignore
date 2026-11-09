@@ -1,0 +1,6 @@
+.git
+.github
+infra
+tests
+docs
+*.md

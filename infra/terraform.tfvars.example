@@ -1,0 +1,3 @@
+owner       = "dbk7"
+github_repo = "mk7git-hub/ecs-fargate-secure-delivery"
+# allowed_cidr = "YOUR.IP.ADDRESS/32"
