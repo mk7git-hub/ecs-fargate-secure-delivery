@@ -8,7 +8,7 @@ from http.server import ThreadingHTTPServer
 import pytest
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1] / "app"))
-import server  # noqa: E402
+import server
 
 
 @pytest.fixture(scope="module")
