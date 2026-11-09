@@ -53,7 +53,7 @@ jobs:
           output: trivy.sarif
           exit-code: "0"
       - if: always()
-        uses: github/codeql-action/upload-sarif@v3
+        uses: github/codeql-action/upload-sarif@v4
         with:
           sarif_file: trivy.sarif
       - name: smoke test the container
